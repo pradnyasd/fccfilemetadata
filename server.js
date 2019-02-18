@@ -3,7 +3,6 @@ var cors = require('cors');
 var multer = require('multer');
 var bodyParser = require('body-parser');
 var upload = multer({ dest: './public' });
-// require and use "multer"...
 
 var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -31,3 +30,5 @@ app.route('/api/fileanalyse')
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
+
+
